@@ -1,8 +1,10 @@
-a=int(input("enter number of units"))
-
-if a<=100 :
+units=int(input("enter units"))
+if units<=100:
     print("no charge")
-elif a>100 and a<=200 :
-    print("total bill",(a-100)*5)
-else :
-    print("total bill",500+(a-200)*10)
+elif units<=200:
+    unit=units-100
+    print("total bill",unit*5)
+elif units>200:
+    unit=units-200
+    print("total bill",500+(unit*10))
+
